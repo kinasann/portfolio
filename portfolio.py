@@ -6,7 +6,7 @@ st.title("ポートフォリオ")
 
 
 st.write('<font size="8"><b>tkinter Tool</font></b> <nobr>&emsp;&emsp;&emsp;\
-        <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.exe?raw=true">\
+        <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.zip?raw=true">\
         ダウンロード</a>', unsafe_allow_html=True)
 
 
@@ -25,7 +25,7 @@ with st.sidebar:
         st.write('<div style="text-align: right"><a href="#top">一番上へ</a></div>',
                 unsafe_allow_html=True)
         st.write('<div style="text-align: right">\
-                <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.exe?raw=true">\
+                <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.zip?raw=true">\
                 tkinter Tool ダウンロード</a></div>', unsafe_allow_html=True)
 
 img_top = Image.open('tkinter_tool top.png')
