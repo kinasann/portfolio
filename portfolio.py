@@ -3,9 +3,14 @@ from PIL import Image
 
 st.write('<h6 style="color:white">Top</h6>', unsafe_allow_html=True)
 st.title("ポートフォリオ")
-"""
-# tkinter Tool
-"""
+
+
+st.write('<font size="8"><b>tkinter Tool</font></b> <nobr>&emsp;&emsp;&emsp;\
+        <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.exe?raw=true">\
+        ダウンロード</a>', unsafe_allow_html=True)
+
+
+
 with st.sidebar:
         st.write('<a href="#python-50">■ 使用言語、制作時間、使用モジュール</a>', unsafe_allow_html=True)
         st.write('<a href="#content">■ 内容</a>', unsafe_allow_html=True)
@@ -17,7 +22,11 @@ with st.sidebar:
                 st.write('<a href="#geomentry">★geomentry</a>', unsafe_allow_html=True)
                 st.write('<a href="#place">★place配置</a>', unsafe_allow_html=True)
                 st.write('<a href="#color">★color</a>', unsafe_allow_html=True)
-        st.write('<div style="text-align: right"><a href="#top">一番上へ</a></div>', unsafe_allow_html=True)
+        st.write('<div style="text-align: right"><a href="#top">一番上へ</a></div>',
+                unsafe_allow_html=True)
+        st.write('<div style="text-align: right">\
+                <a href="https://github.com/kinasann/portfolio/blob/main/tkinter_Tool.exe?raw=true">\
+                tkinter Tool ダウンロード</a></div>', unsafe_allow_html=True)
 
 img_top = Image.open('tkinter_tool top.png')
 st.image(img_top, caption="tkinter Tool起動時", use_column_width=True)
