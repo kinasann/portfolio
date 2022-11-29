@@ -17,7 +17,7 @@ with st.sidebar:
         st.write('<a href="#trigger">■ 作成に至ったきっかけ</a>', unsafe_allow_html=True)
         st.write('<a href="#purpose">■ 目的、趣旨</a>', unsafe_allow_html=True)
         st.write('<a href="#devised">■ 特に工夫したところ</a>', unsafe_allow_html=True)
-        with st.beta_expander("各項目事の内容、工夫した点"):
+        with st.expander("各項目事の内容、工夫した点"):
                 st.write('<a href="#left-window">★左ウインドウを</a>', unsafe_allow_html=True)
                 st.write('<a href="#geomentry">★geomentry</a>', unsafe_allow_html=True)
                 st.write('<a href="#place">★place配置</a>', unsafe_allow_html=True)
