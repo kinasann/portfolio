@@ -19,7 +19,7 @@ with st.sidebar:
         st.write('<a href="#devised">■ 特に工夫したところ</a>', unsafe_allow_html=True)
         with st.expander("各項目事の内容、工夫した点"):
                 st.write('<a href="#left-window">★左ウインドウを</a>', unsafe_allow_html=True)
-                st.write('<a href="#geomentry">★geomentry</a>', unsafe_allow_html=True)
+                st.write('<a href="#geomentry">★geometry</a>', unsafe_allow_html=True)
                 st.write('<a href="#place">★place配置</a>', unsafe_allow_html=True)
                 st.write('<a href="#color">★color</a>', unsafe_allow_html=True)
         st.write('<div style="text-align: right"><a href="#top">一番上へ</a></div>',
@@ -47,7 +47,7 @@ tkinterでデスクトップアプリを作る際に活用できるツールア�
 
 st.write('<h6 style="color:white">Trigger</h6>', unsafe_allow_html=True)
 st.write('<h4>■ 作成に至ったきっかけ</h4>', unsafe_allow_html=True)
-st.write("・tkinterでデスクトップアプリを作る際に、geomentryやplaceの引数を目安で記入し、実行して確かめる → \
+st.write("・tkinterでデスクトップアプリを作る際に、geometryやplaceの引数を目安で記入し、実行して確かめる → \
         思うサイズや位置ではなく、再度記入と実行…  等、微調整を繰り返すことが多かった。")
 st.write("・色を設定する場合、redなどの単語指定ではなく、好みの色を設定する場合、毎回インターネットで検索する必要があった。")
 st.write("上記のような微調整に時間が掛かり、制作がなかなか進まず、一目でわかるようなツールがあれば作りやすいのではないかと思い、\
@@ -55,7 +55,7 @@ st.write("上記のような微調整に時間が掛かり、制作がなかな�
 
 st.write('<h6 style="color:white">Purpose</h6>', unsafe_allow_html=True)
 st.write('<h4>■ 目的、趣旨</h4>', unsafe_allow_html=True)
-st.write("・geomentry引数 → ウインドウを好きなサイズや位置に動かすことで、引数の入手")
+st.write("・geometry引数 → ウインドウを好きなサイズや位置に動かすことで、引数の入手")
 st.write("・place引数 → ルーラーを作成し、照らし合わせることで座標がわかる")
 st.write("・color →色選択ダイアログで好きな色を選択し、カラーコードを入手")
 
@@ -78,10 +78,10 @@ st.write('<h5>★左ウインドウを</h5>', unsafe_allow_html=True)
 st.write("<b>閉じるボタン：</b> 文字通りメニューウインドウ左に展開されるウインドウを閉じることが出来る。<br>\
         左側にウインドウが展開されていない場合は、押すことはできるが何も反応はない。",unsafe_allow_html=True)
 st.write("")
-st.write('<h6 style="color:white">geomentry</h6>', unsafe_allow_html=True)
-st.write('<h5>★geomentry</h5>', unsafe_allow_html=True)
+st.write('<h6 style="color:white">geometry</h6>', unsafe_allow_html=True)
+st.write('<h5>★geometry</h5>', unsafe_allow_html=True)
 img_geo =Image.open("geo_pic.png")
-st.image(img_geo, caption="geomentry", use_column_width=True)
+st.image(img_geo, caption="geometry", use_column_width=True)
 
 st.write("<b>ウインドウ作成：</b> 左側にウインドウを展開 <br> 通常のウインドウ操作と同様、\
         ドラッグすることで大きさ変更、ウインドウ位置の移動をすることができる。",unsafe_allow_html=True)
@@ -91,10 +91,10 @@ st.write('<b>確認ボタン：</b> 色選択ダイアログ以外の左側に�
         </span> x<span style="border-bottom:solid 3px #0000ff;">ウインドウ縦幅</span> x \
         <span style="border-bottom:solid 3px #ff80c0;">PC画面左端からウインドウまでの幅</span> x \
         <span style="border-bottom:solid 3px #00b050;">PC画面上端からウインドウまでの幅</span><br>\
-        geomentryの引数に設定することで、同じサイズと位置でウインドウを作ることが出来る。', unsafe_allow_html=True)
+        geometryの引数に設定することで、同じサイズと位置でウインドウを作ることが出来る。', unsafe_allow_html=True)
 
 st.write("<b>コピーボタン：</b>文字通りコピーすることができるボタン<br>\
-        コピー対象はgeomentryラベルフレーム内のテキストボックス全範囲になっているため、\
+        コピー対象はgeometryラベルフレーム内のテキストボックス全範囲になっているため、\
         一部分のみやplace位置ラベルフレーム内のテキストボックスをコピーすることは不可能<br>\
         もし一部分のみコピーしたい場合は、コピーボタンは使用せず、通常通りテキストボックス内のコピーしたい範囲をドラックして\
         「ctrl + c」することでコピーすることは可能",unsafe_allow_html=True)
@@ -134,7 +134,7 @@ st.image(img_touka_geo, use_column_width=True)
 
 st.write("このプログラムを組むにあたり、テキストボックスに代入された文字を各要素に分解、計算、結合を行っている。")
 st.write("100x500などウインドウサイズのみの入力だった場合、ウインドウサイズは反映するがウインドウ位置は初期値に表示される。<br>\
-        このplaceルーラーウインドウのサイズや位置もgeomentryラベルフレームの確認ボタンで取得できるため、\
+        このplaceルーラーウインドウのサイズや位置もgeometryラベルフレームの確認ボタンで取得できるため、\
         調べたいウインドウと重ねて確認ボタンを押すことで、位置の確認ができる。<br>\
         その後、再度placeラベルフレームのテキスト欄に記入して対象の軸ボタンを押すと、\
         ウインドウの左上に合わせた位置でルーラーが展開される", unsafe_allow_html=True)
@@ -149,7 +149,7 @@ st.write("<b>色ボタン：</b>ボタンを押すと、色選択ダイアログ
         本アプリ以外時の色選択ダイアログと同様、基本色にない色も設定することが出来る。<br>\
         「OK」を押すとカラーコードと書かれた下のテキストボックスにコードが代入。<br>\
         また、色ボタン右に選択した色を表示するように設定している。<br>", unsafe_allow_html=True)
-st.write("<b>コピーボタン：</b>geomentryと同様、カラーコードと書かれた下のテキストボックス内全てがコピー対象になる     ",unsafe_allow_html=True)
+st.write("<b>コピーボタン：</b>geometryと同様、カラーコードと書かれた下のテキストボックス内全てがコピー対象になる     ",unsafe_allow_html=True)
 
 
 img_color = Image.open("color2.png")
